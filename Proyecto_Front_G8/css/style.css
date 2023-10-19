@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+
+}
+
+
+body, header, main, footer {
+    border: 3px red solid;
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400px;
+}
+button{
+    background-color: red;
+    font-size: large;
+}
+
+header{
+    background: rgb(240, 240, 177);;
+    box-shadow: 0 0 1rem rgb(215, 187, 240/50%);
+}
+
+body{
+    background-color: rgb(249, 216, 222);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    min-height: 100px;
+    overflow: auto;
+    
+}
+
+main>div{
+    border: 2px blue solid;
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 65%;
+    background-color: rgb(173, 245, 245);
+
+}
+
+main>aside{
+    border: 2px blue solid;
+    min-height: 180px;
+    min-width: 55%;
+    margin: 0.5rem;
+    background-color: rgb(215, 187, 240);
+
+}
+
+.secciones{
+    border: 2px green solid;
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.secciones article{
+    border: 2px purple solid;
+    margin:0.5rem ;
+    min-height: 50px;
+}
+
+#gif-ppal{
+  
+    box-sizing: border-box;
+}
+
+/*logo y menu*/
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.header-menubar{
+    border: 5px green solid;
+    text-shadow: 3px;
+    left: auto;
+    position:relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+
+.header-menubar ul {
+    list-style:  none;
+}
+
+.header-menubar li{
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5rem ;
+}
+
+.header-menubar a {
+    color: blueviolet;
+}
+
+.header-menubar a:hover {
+    color: black;
+    background-color: yellow;
+
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+#gif-ppal {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    max-width: 400px; /* Establece un ancho máximo opcional */
+    /* Otras propiedades de estilo, si es necesario */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.error {
+    color: red;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: 'Nombre de Fuente', sans-serif;
+}
+
+
+/* Flexbox */
+
+#cajas1{
+    width: 80%;
+    max-width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    }
+    .flex-item{
+        padding: 2%;
+        background-color: rgb(255, 187, 0);
+        margin-bottom: 10px;
+        width: 24%;
+    }
+    /* .flex-container div:last-child{
+        width: 100%;
+    } */
+
+/* Media Queries
+@media disp operador (propiedad:valor){
+    --
+} 
+*/
+
+/* dispositivos pequeños */
+@media screen and (min-width:0px) and (max-width:672px){
+    
+    body{
+        background-color: aqua;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    #cajas1{width: 90%;}
+
+    .flex-container{
+        flex-direction: column;
+        }
+        .flex-item{
+            width: 100%;
+        }
+    
+}
+/* dispositivos medianos */
+@media screen and (min-width:673px) and (max-width:990px) {
+    body{
+        background-color: rgb(4, 0, 255);
+    }
+
+    .flex-item{width: 49%;}
+}
+
+/* dispositivos grandes */
+@media screen and (min-width: 991px) and (max-width: 1296px) {
+        body{
+        background-color: rgb(26, 255, 0);
+    }
+}
+
+.advertencia-oculta {
+    display: none;
+  }
+/* Estilo para el contenedor del video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Esto mantiene una relación de aspecto de 16:9 para el contenedor */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Estilo para el video dentro del contenedor */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  
+  
+
+  
